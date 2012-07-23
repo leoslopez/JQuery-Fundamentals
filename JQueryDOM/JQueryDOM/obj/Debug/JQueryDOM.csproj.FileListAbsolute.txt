@@ -1,0 +1,5 @@
+c:\users\llopez\documents\visual studio 2010\Projects\JQueryDOM\JQueryDOM\bin\JQueryDOM.dll
+c:\users\llopez\documents\visual studio 2010\Projects\JQueryDOM\JQueryDOM\bin\JQueryDOM.pdb
+c:\users\llopez\documents\visual studio 2010\Projects\JQueryDOM\JQueryDOM\obj\Debug\ResolveAssemblyReference.cache
+c:\users\llopez\documents\visual studio 2010\Projects\JQueryDOM\JQueryDOM\obj\Debug\JQueryDOM.dll
+c:\users\llopez\documents\visual studio 2010\Projects\JQueryDOM\JQueryDOM\obj\Debug\JQueryDOM.pdb
