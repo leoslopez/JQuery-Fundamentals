@@ -13,6 +13,7 @@
 
     <script type="text/javascript">    
 
+        // DOM ready
         $(document).ready(function () {
             var mytable = $('#MyTable');
             $('tr:even', mytable).addClass('LigthEvenRowClass');
