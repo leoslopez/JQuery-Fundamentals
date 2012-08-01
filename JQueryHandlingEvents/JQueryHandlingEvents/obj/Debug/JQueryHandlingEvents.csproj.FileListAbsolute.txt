@@ -1,5 +1,0 @@
-C:\Users\llopez\Desktop\Training\Practice\JQueryHandlingEvents\JQueryHandlingEvents\bin\JQueryHandlingEvents.dll
-C:\Users\llopez\Desktop\Training\Practice\JQueryHandlingEvents\JQueryHandlingEvents\bin\JQueryHandlingEvents.pdb
-C:\Users\llopez\Desktop\Training\Practice\JQueryHandlingEvents\JQueryHandlingEvents\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\llopez\Desktop\Training\Practice\JQueryHandlingEvents\JQueryHandlingEvents\obj\Debug\JQueryHandlingEvents.dll
-C:\Users\llopez\Desktop\Training\Practice\JQueryHandlingEvents\JQueryHandlingEvents\obj\Debug\JQueryHandlingEvents.pdb

@@ -1,5 +1,0 @@
-c:\users\llopez\documents\visual studio 2010\Projects\jQuerySelectors\jQuerySelectors\bin\jQuerySelectors.dll
-c:\users\llopez\documents\visual studio 2010\Projects\jQuerySelectors\jQuerySelectors\bin\jQuerySelectors.pdb
-c:\users\llopez\documents\visual studio 2010\Projects\jQuerySelectors\jQuerySelectors\obj\Debug\ResolveAssemblyReference.cache
-c:\users\llopez\documents\visual studio 2010\Projects\jQuerySelectors\jQuerySelectors\obj\Debug\jQuerySelectors.dll
-c:\users\llopez\documents\visual studio 2010\Projects\jQuerySelectors\jQuerySelectors\obj\Debug\jQuerySelectors.pdb
