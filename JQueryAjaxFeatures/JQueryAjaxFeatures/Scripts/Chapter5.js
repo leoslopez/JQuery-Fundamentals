@@ -89,6 +89,37 @@ function WireEventsUsingPost () {
     });
 }
 
+
+////******* Bind events related to UsingPost.html ******////
+function WireEventsUsingAjax() {
+
+    $('#myButton').click(function () {
+
+        var customer = 'cust=' +
+                            JSON.stringify({
+                                FirstName: $('#txtFirstName').val(),
+                                LastName: $('#txtLastName').val()
+                            });
+
+        $.ajax({
+            url: 'CustomerService.svc/InsertCustomer',
+            data: customer,
+            dataType: 'json', // type of data returned from the server.
+            success: function (data, status, xhr) {                
+                var spanInsert = $('#spanInsert');
+                spanInsert.append(data.d.Message);
+                spanInsert.append('<br />');
+            },
+            error: function (xhr, status, error) {
+                alert('Error ocurred: ' + status);
+            }
+        });
+
+    });
+}
+
+
+////******* Common Code ******////
 function fillCustomerInfo(data, lblId, lblFirstName, lblLastName) {
     lblId.text(data.ID);
     lblFirstName.text(data.FirstName);
