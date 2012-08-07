@@ -1,18 +1,33 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JQueryDOM", "JQueryDOM\JQueryDOM.csproj", "{A55C188C-9D83-4A3B-858A-D587E743C8DB}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "JQueryDOM", "JQueryDOM\", "{A4D3A097-A23A-4077-9C77-B56A61C610AF}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/JQueryDOM"
+		Debug.AspNetCompiler.PhysicalPath = "JQueryDOM\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\JQueryDOM\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/JQueryDOM"
+		Release.AspNetCompiler.PhysicalPath = "JQueryDOM\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\JQueryDOM\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "5851"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A55C188C-9D83-4A3B-858A-D587E743C8DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A55C188C-9D83-4A3B-858A-D587E743C8DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A55C188C-9D83-4A3B-858A-D587E743C8DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A55C188C-9D83-4A3B-858A-D587E743C8DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4D3A097-A23A-4077-9C77-B56A61C610AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4D3A097-A23A-4077-9C77-B56A61C610AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

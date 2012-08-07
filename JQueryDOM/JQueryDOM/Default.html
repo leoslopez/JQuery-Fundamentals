@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Index</title>    
+    
+    <link href="Styles/Chapter3.css" rel="stylesheet" type="text/css" />
+
+    <script src="Scripts/jquery-1.6.4.min.js" type="text/javascript"></script>
+    <script src="Scripts/Chapter3.js" type="text/javascript"></script>    
+
+</head>
+<body> 
+    <div style="border:1px solid Gray; background-color:Silver; margin:20px; font-family:Comic Sans MS; font-size:x-small">
+        <h3>JQuery Fundamentals - Exercises of chapter 3:</h3>
+        <p>1 - Click "Exercise 1" button, it builds an html content using specific nodes and sets this content to another node.</p>
+        <p>2 - Click "Exercise 2" button, it obtains the divs with RedDiv and BlueDiv classes and changes its styles and attributes (using attr and css).</p>
+        <p>3 - Click "Exercise 3" button, it obtains the divs with RedDiv and BlueDiv classes and changes its styles and attributes (using json).</p>
+        <p>4 - Click "Exercise 4" button in order to see append and prepend methods behavior.</p>        
+        <p>5 - Click "Exercise 5" button, it obtains spans with .foo class and wrap them (using wrap method).</p>
+        <p>6 - Click "Exercise 6" button, it removes the spans wrapped by a div with .ParentWraper (note that you should run first exercise 5).</p>
+        <p>7 - Click "Exercise 7" button, it adds OrangeBackground to the label 'lblLast' addClass.</p>        
+        <p>8 - Click "Exercise 8" button, it removes OrangeBackground to the label 'lblFirst' removeClass.</p>        
+        <p>9 - Click "Exercise 9" button, it adds and removes HighlightClass to the text inputs using toggleClass.</p>        
+    </div>
+    <div class="LightGrayDiv infoContainer">
+        <button id="button1" onclick="exerciseOne()">Exercise 1</button>
+        <button id="button2" onclick="exerciseTwo()">Exercise 2</button>
+        <button id="button3" onclick="exerciseThree()">Exercise 3</button>
+        <button id="button4" onclick="exerciseFour()">Exercise 4</button>
+        <button id="button5" onclick="exerciseFive()">Exercise 5</button>
+        <button id="button6" onclick="exerciseSix()">Exercise 6</button>
+        <button id="button7" onclick="exerciseSeven()">Exercise 7</button>        
+        <button id="button8" onclick="exerciseEight()">Exercise 8</button>        
+        <button id="button9" onclick="exerciseNine()">Exercise 9</button>        
+    </div>
+
+    <div id="OutputDiv"></div>
+
+    <div id="TableContainerDiv" title="Contains Table">
+        <table id="DataTable">
+          <tr>
+             <td>Cell 1 Row 1</td>
+          </tr>
+          <tr>
+             <td>Cell 1 Row 2</td>
+          </tr>
+          <tr>
+             <td>Cell 1 Row 3</td>
+          </tr>
+          <tr>
+             <td>
+                <table style="width:100%">
+                    <tr>
+                        <td>Nested Table Cell and Row</td>
+                    </tr>
+                </table>
+             </td>
+          </tr>
+        </table>
+        <br />
+    </div>
+    <div class="BlueDiv">
+        <span>Blue div</span>
+    </div>    
+    <span class="foo">span 1</span>
+    <span class="foo">span 2</span>
+    <span class="foo">span 3</span>
+    <br />
+    <div class="RedDiv">
+        <span>Red div</span>
+    </div>
+    <p class="RedDiv">
+        A comment...
+    </p>
+    <table style="width:300px;">
+            <tr>
+                <td style="width:30%;"><label id="lblFirst" class="OrangeBackground">First Name</label></td>
+                <td style="width:70%;"><input id="FirstNameTextBox" value="John" onfocus="FocusBlur(this)" onblur="FocusBlur(this)" type="text" /></td>
+            </tr>
+            <tr>
+                <td><label id="lblLast">Last Name</label></td>
+                <td><input id="LastNameTextBox"  onfocus="FocusBlur(this)" onblur="FocusBlur(this)" type="text" /></td>
+            </tr>
+    </table>    
+</body>
+</html>
