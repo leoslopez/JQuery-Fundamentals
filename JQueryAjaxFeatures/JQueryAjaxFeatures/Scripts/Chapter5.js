@@ -1,4 +1,6 @@
-﻿function WireEvents() {
+﻿
+////******* Bind events related to UsingLoad.html ******////
+function WireEventsUsingLoad() {
 
     allowOnlyNumber($('#txtCountAnimals'));    
 
@@ -25,6 +27,72 @@
         var txtCountAnimals = $('#txtCountAnimals').val();
         $('#divAnimals').load('GetAnimals.aspx', { PageSize: txtCountAnimals });
     });
+}
+
+
+////******* Bind events related to UsingGet.html ******////
+function WireEventsUsingGet() {
+
+    allowOnlyNumber($('#txtCustomerID'));
+    
+    // Exercise 4
+    $('#myButton1').click(function () {
+        $.get('MyOtherPage1.html', function (data) {
+            $('#outputDiv').html(data);
+        });
+    });
+
+    // Exercise 5
+    $('#myButton2').click(function () {
+        var customerId = $('#txtCustomerID').val();
+        $.get('GetCustomers.aspx', { id: customerId }, function (data) {
+            fillCustomerInfo(data, $('#lblID'), $('#lblFirst'), $('#lblLast'));
+        }, 'json');
+    });
+
+    // Exercise 6
+    $('#myButton3').click(function () {
+        var customerId = $('#txtCustomerID3').val();
+        $.getJSON('GetCustomers.aspx', { id: customerId }, function (data) {
+            fillCustomerInfo(data, $('#lblID3'), $('#lblFirst3'), $('#lblLast3'));
+        });
+    });
+
+}
+
+
+////******* Bind events related to UsingPost.html ******////
+function WireEventsUsingPost () {
+    allowOnlyNumber($('#txtCountAnimals'));
+
+    // Exercise 7
+    $('#myButton1').click(function () {
+        var size = $('#txtCountAnimals').val();
+        $.post('GetAnimals.aspx', { pageSize: size },
+            function (data) {
+                $('#outputDiv').html(data);
+            });
+    });
+
+    // Exercise 8
+    $('#myButton2').click(function () {
+        $.post('CustomerService.svc/GetCustomers',
+        null,
+        function (data) {
+
+            // obtain number of customer to be displayed
+            var checked = $("input[@name=customerOption]:checked").val()
+
+            var cust = data.d[checked];
+            fillCustomerInfo(cust, $('#lblID'), $('#lblFirst'), $('#lblLast'));
+        }, 'json');
+    });
+}
+
+function fillCustomerInfo(data, lblId, lblFirstName, lblLastName) {
+    lblId.text(data.ID);
+    lblFirstName.text(data.FirstName);
+    lblLastName.text(data.LastName);
 }
 
 function allowOnlyNumber(obj) {

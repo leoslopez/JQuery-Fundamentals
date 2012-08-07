@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Index</title>    
+    
+    <link href="Styles/Chapter5.css" rel="stylesheet" type="text/css" />
+
+    <script src="Scripts/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script src="Scripts/Chapter5.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            WireEventsUsingPost();
+
+        });
+    </script>
+
+</head>
+<body> 
+
+    <div style="border:1px solid Gray; background-color:Silver; margin:20px; font-family:Comic Sans MS; font-size:small">
+        <h3>JQuery Fundamentals - Exercises of chapter 5 (Using Post):</h3>        
+        <p>7 - Clicking on "Get my animals" button, it loads an .aspx and renderize on the page.</p>        
+        <p>8 - Clicking on "Get my Customers" button, it calls to a web service and displays the data obtained.</p>        
+    </div>
+    <br />
+
+    <div class="LightGrayDiv">
+        <button id="myButton1">Get my animals</button>                
+        <br />
+        <br />
+        <label>Count</label>&nbsp<input id="txtCountAnimals" type="text" value="0" style="text-align:right" />
+        <br />
+        <br />
+        <div id="outputDiv" ></div>                        
+    </div>        
+
+    <div class="LightGrayDiv">
+        <button id="myButton2">Get my Customers</button>        
+            <input class="customerOption" type="radio" name="customer" value="0" checked="checked"/>First Customer
+            <input class="customerOption" type="radio" name="customer" value="1" />Second Customer
+        <br />        
+        <div class="infoContainer" >
+            <label class="infoTitle">ID: </label><label id="lblID"></label>
+            <br />
+            <label class="infoTitle">First Name: </label><label id="lblFirst"></label>
+            <br />
+            <label class="infoTitle">Last Name: </label><label id="lblLast"></label>                        
+        </div>
+    </div>
+
+</body>
+</html>

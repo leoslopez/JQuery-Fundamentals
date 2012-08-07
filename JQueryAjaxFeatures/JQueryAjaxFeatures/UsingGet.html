@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Index</title>    
+    
+    <link href="Styles/Chapter5.css" rel="stylesheet" type="text/css" />
+
+    <script src="Scripts/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script src="Scripts/Chapter5.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            WireEventsUsingGet();
+
+        });
+    </script>
+
+</head>
+<body> 
+    <div style="border:1px solid Gray; background-color:Silver; margin:20px; font-family:Comic Sans MS; font-size:small">
+        <h3>JQuery Fundamentals - Exercises of chapter 5 (Using Get and GetJSON):</h3>        
+        <p>4 - Clicking on "Get an Html" button, it obtains an html and displays it below.</p>
+        <p>5 - Clicking on "Get an JSON" button, it obtains an JSON data and displays it below.</p>
+        <p>6 - Clicking on "Get an JSON (using getJSON)" button, it obtains an JSON data and displays it below (using getJSON jQuery method).</p>
+    </div>
+    <br />
+    <div class="LightGrayDiv">
+        <button id="myButton1">Get an Html</button>        
+        <div id="outputDiv" ></div>
+        <br />                
+    </div>
+    <br />
+    <br />    
+    <div class="LightGreenDiv">        
+        <h5>Using Get method</h5>
+        <button id="myButton2">Get an JSON</button>
+        <br />
+        <br />
+        <label>ID: </label><input id="txtCustomerID"/>        
+        <div class="infoContainer" >
+            <label class="infoTitle">ID: </label><label id="lblID"></label>
+            <br />
+            <label class="infoTitle">First Name: </label><label id="lblFirst"></label>
+            <br />
+            <label class="infoTitle">Last Name: </label><label id="lblLast"></label>                        
+        </div>
+    </div>    
+
+    <div class="LightGreenDiv">        
+        <h5>Using GetJson method</h5>
+        <button id="myButton3">Get an JSON (using getJSON)</button>
+        <br />
+        <br />
+        <label>ID: </label><input id="txtCustomerID3"/>        
+        <div class="infoContainer" >
+            <label class="infoTitle">ID: </label><label id="lblID3"></label>
+            <br />
+            <label class="infoTitle">First Name: </label><label id="lblFirst3"></label>
+            <br />
+            <label class="infoTitle">Last Name: </label><label id="lblLast3"></label>                        
+        </div>
+    </div>    
+
+</body>
+</html>
