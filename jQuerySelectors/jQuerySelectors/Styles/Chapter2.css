@@ -1,0 +1,48 @@
+﻿.BlueDiv  
+{
+    background-color: Navy; 
+    color: White; 
+    width: 200px; 
+}
+        
+.RedDiv 
+{ 
+    background-color: Red; 
+    color: White; 
+    width: 200px;
+}
+
+.OrangeBackground { background-color: Orange; }
+.GreenBorder { border: 1px solid Green; }
+.OrangeBorder { border: 1px solid Orange; }
+.LimeBorder { border: 1px solid Lime; }
+.RedText { color: Red; }
+.OrangeText { color: Orange; }
+.OliveBackground { background-color: Olive; }
+.HighlightClass { background-color: yellow; }
+.DashedBorder { border-style: dashed; }
+.DottedBorder { border-style: dotted; }
+.LigthEvenRowClass { background-color: #D0F5A9; }
+.DarkEvenRowClass { background-color: #58FA58; }
+.LigthOddRowClass { background-color: #E6E6E6; }
+.DarkOddRowwClass { background-color: #A4A4A4; }
+
+.LightGrayDiv 
+{ 
+    background-color: #E6E6E6; 
+    padding: 10px;
+}
+
+.LightGreenDiv 
+{ 
+    background-color: #D0F5A9; 
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;    
+}
+
+.infoContainer 
+{
+    border: 1px solid gray;
+    margin: 10px;    
+}

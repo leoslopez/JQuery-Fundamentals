@@ -1,18 +1,33 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jQuerySelectors", "jQuerySelectors\jQuerySelectors.csproj", "{64545E8E-9D5E-491E-9457-EFCD690EA0FF}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "jQuerySelectors", "jQuerySelectors\", "{A4D3A097-A23A-4077-9C77-B56A61C610AF}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/jQuerySelectors"
+		Debug.AspNetCompiler.PhysicalPath = "jQuerySelectors\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\jQuerySelectors\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/jQuerySelectors"
+		Release.AspNetCompiler.PhysicalPath = "jQuerySelectors\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\jQuerySelectors\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "5851"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{64545E8E-9D5E-491E-9457-EFCD690EA0FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{64545E8E-9D5E-491E-9457-EFCD690EA0FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{64545E8E-9D5E-491E-9457-EFCD690EA0FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{64545E8E-9D5E-491E-9457-EFCD690EA0FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4D3A097-A23A-4077-9C77-B56A61C610AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4D3A097-A23A-4077-9C77-B56A61C610AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Index</title>    
+    
+    <link href="Styles/Chapter2.css" rel="stylesheet" type="text/css" />
+
+    <script src="Scripts/jquery-1.6.4.min.js" type="text/javascript"></script>
+    <script src="Scripts/Chapter2.js" type="text/javascript"></script>
+
+    <script type="text/javascript">    
+
+        // DOM ready
+        $(document).ready(function () {
+
+        });        
+                      
+    </script>
+
+</head>
+<body> 
+    <div style="border:1px solid Gray; background-color:Silver; margin:20px; font-family:Comic Sans MS; font-size:x-small">
+        <h3>JQuery Fundamentals - Exercises of chapter 2:</h3>
+        <p>1 - Click "Exercise 1" button, it obtains the paragraphs and spans, and then changes its border styles.</p>        
+        <p>2 - Click "Exercise 2" button, it obtains the divs (only divs) with BlueDiv and RedDiv classes and changes its border style.</p>
+        <p>3 - Click "Exercise 3" button, it changes the border sytle to the divs with defined title attribute.</p>
+        <p>4 - Click "Exercise 4" button, it change border sytle to the divs with title equal to "Contains Table".</p>        
+        <p>5 - Click "Exercise 5" button, it obtains the input controls and defines "AZ" value for all of them.</p>
+        <p>6 - Click "Exercise 6" button, it obtains the divs which contains "Group 2" text and changes its color.</p>
+        <p>7 - Click "Exercise 7" button, it obtains the odd and even TRs and changes its color.</p>
+        <p>8 - Click "Exercise 8" button, it obtains the first child of every element group and changes its color.</p>
+        <p>9 - Click "Exercise 9" button, it selects all inputs with value that begins with "aButton" (You should reload page if exercise 5 was ran).</p>
+        <p>10 - Click "Exercise 10" button, it selects all inputs with value that ends with "b2" (You should reload page if exercise 5 was ran).</p>
+        <p>11 - Click "Exercise 11" button, it selects all inputs with value that contains "Button" (You should reload page if exercise 5 was ran).</p>
+    </div>
+    <div class="LightGrayDiv infoContainer">
+        <button id="button1" onclick="exerciseOne()">Exercise 1</button>
+        <button id="button2" onclick="exerciseTwo()">Exercise 2</button>
+        <button id="button3" onclick="exerciseThree()">Exercise 3</button>
+        <button id="button4" onclick="exerciseFour()">Exercise 4</button>
+        <button id="button5" onclick="exerciseFive()">Exercise 5</button>
+        <button id="button6" onclick="exerciseSix()">Exercise 6</button>
+        <button id="button7" onclick="exerciseSeven()">Exercise 7</button>
+        <button id="button8" onclick="exerciseEight()">Exercise 8</button>
+        <button id="button9" onclick="exerciseNine()">Exercise 9</button>
+        <button id="button10" onclick="exerciseTen()">Exercise 10</button>
+        <button id="button11" onclick="exerciseEleven()">Exercise 11</button>
+    </div>
+
+    <div>
+        <input type="button" value="aButton b1" />
+        <input type="button" value="Button b2" />
+        <input type="button" value="aButton b3" />
+        <input type="text" value="Testing"/>
+    </div>
+    <div id="group1">
+        <span>Child 1 - Group 1</span>
+        <br />
+        <span>Child 2 - Group 1</span>
+    </div>
+    <br />
+    <div id="group2">
+        <span>Child 1 - Group 2</span>
+        <br />
+        <span>Child 2 - Group 2</span>
+    </div>
+    <div id="TestDiv" title="Div Title asdf asdfsdf asdf">
+        This is my div text
+    </div>
+    <div title="Contains Table">
+        <table id="DataTable">
+          <tr>
+             <td>Cell 1 Row 1</td>
+          </tr>
+          <tr>
+             <td>Cell 1 Row 2</td>
+          </tr>
+          <tr>
+             <td>Cell 1 Row 3</td>
+          </tr>
+          <tr>
+             <td>
+                <table style="width:100%">
+                    <tr>
+                        <td>Nested Table Cell and Row</td>
+                    </tr>
+                </table>
+             </td>
+          </tr>
+        </table>
+        <br />
+    </div>
+    <div class="BlueDiv">
+        <span>Blue div</span>
+    </div>
+    <br />
+    <span class="BlueDiv">This is my blue span</span>
+    <br />
+    <div class="RedDiv">
+        <span>Red div</span>
+    </div>
+    <p class="RedDiv">
+        A comment...
+    </p>    
+</body>
+</html>
