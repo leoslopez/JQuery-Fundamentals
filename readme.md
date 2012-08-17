@@ -19,3 +19,4 @@
 
 		> The init page is: /JQueryAjaxFeatures/JQueryAjaxFeatures/Index.html
 		> The exercises code is found here: JQueryAjaxFeatures/Scripts/Chapter5.js
+		
